@@ -1,0 +1,260 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.headerr header {
+/*    position: fixed;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4B7F83;
+    background-color: rgba(75, 127, 131, 0.8);
+    color: #fff;
+}
+
+.trading-text {
+    font-size: 38px;
+    font-weight: bold;
+    color: #6BE3E8;
+}
+
+.letter-d {
+    color: #E8CB6B;
+}
+
+.headerr nav {
+    font-weight: bold;
+    display: flex;
+    font-size:18px;
+    gap: 30px;
+    font-family: 'Arial', Verdana;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgsearch {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    filter: brightness(0) invert(1); 
+    border: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 2px;
+    height: 30px; 
+    background-color: white;
+    display: block;
+    margin: 0 15px;
+}
+
+.login-btn {
+    background-color: #223A3B;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: 'Arial', Verdana, sans-serif;
+    position: relative;
+    margin-right: 40px;
+}
+
+.login-btn::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('./img/user.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    filter: brightness(0) invert(1); 
+}
+
+
+.btn-dangky {
+    background-color: rgba(232, 203, 107, 0.5);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fooder {
+    width: 100%;
+    height: 20vh;
+    background-color: #223A3B;
+    display:flex;
+}
+
+.fooder_1 {
+    width: 25%;
+    font-size: 34px;
+    font-weight: bold;
+    color: #6BE3E8;
+    padding: 12px 28px;
+    text-align: center;
+}
+.fooder_2 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.fooder_2 a {
+    color: #fff;                
+    text-decoration: none;     
+    transition: color 0.3s;
+}
+
+.fooder_3 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.fooder_3 a {
+    color: #fff;                
+    text-decoration: none;     
+    transition: color 0.3s;
+}
+
+.fooder_4 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.fooder_4 a {
+    color: #fff;                
+    text-decoration: none;     
+    transition: color 0.3s;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+    color: #374151;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    margin-bottom: 20px;
+}
+
+.input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #64748b;
+}
+
+.btn-clear, .btn-submit {
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-clear {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+.btn-clear:hover {
+    background-color: #374151;
+}
+
+.btn-submit {
+    background-color: #ea580c;
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    background-color: #f97316;
+}
+
+.mt-2 {
+    margin-top: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
