@@ -2,77 +2,59 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    background-color: #f4f4f4;
 }
 
+/* === SIDEBAR === */
 .sidebar {
-    width: 200px;
+    width: 220px;
     background-color: #0d1d5c;
     color: white;
     min-height: 100vh;
-    padding: 20px 10px;
+    padding: 20px 15px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
 }
-
-.admin-info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-    .admin-info img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
 
 .logout-btn {
-    background-color: orange;
-    border: none;
+    display: block; /* Cho nó chiếm toàn bộ chiều ngang */
     width: 100%;
     padding: 10px;
-    font-weight: bold;
     margin-bottom: 20px;
+    background: orange;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
     cursor: pointer;
+    color: white; /* Chữ trắng như nút */
+    text-align: center; /* Căn giữa chữ */
+    text-decoration: none; /* Bỏ gạch chân của thẻ a */
 }
 
-.menu {
-    list-style: none;
-    padding: 0;
-}
 
-    .menu li {
-        margin: 10px 0;
-    }
-
-        .menu li a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            display: block;
-        }
-
-        .menu li.active a {
-            background-color: #515bb3;
-            border-radius: 5px;
-        }
-
+/* === MAIN CONTENT === */
 .main-content {
     flex: 1;
     background-color: #f8f8f8;
-    padding: 20px;
+    padding: 30px 40px;
 }
 
+/* === HEADER === */
 .header {
     background-color: white;
-    padding: 15px 20px;
+    padding: 20px 30px;
     border-bottom: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .refresh-section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .date-wrapper {
@@ -84,24 +66,33 @@
     .date-wrapper label {
         font-weight: 500;
     }
+
+/* === BUTTON === */
 .refresh-btn {
     background-color: #a4f0b2;
     border: none;
-    padding: 8px 14px;
+    padding: 8px 16px;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
     .refresh-btn:hover {
         background-color: #146116;
+        color: white;
+        transform: scale(1.03);
     }
+
+/* === TABLE === */
 .warehouse-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
     .warehouse-table thead {
@@ -109,18 +100,33 @@
         color: white;
     }
 
-    .warehouse-table th, .warehouse-table td {
-        padding: 12px 10px;
-        text-align: left;
+    .warehouse-table th,
+    .warehouse-table td {
+        padding: 14px 12px;
         text-align: center;
-        border: 1px solid #ccc;
+        border-bottom: 1px solid #ddd;
+        font-size: 15px;
     }
 
     .warehouse-table td {
         background-color: #fff;
     }
 
-    .warehouse-table .action-icons {
-        display: flex;
-        gap: 10px;
+/* === ACTION ICONS === */
+.action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+    .action-icons img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: transform 0.2s, filter 0.2s;
     }
+
+        .action-icons img:hover {
+            filter: brightness(1.2);
+            transform: scale(1.1);
+        }
